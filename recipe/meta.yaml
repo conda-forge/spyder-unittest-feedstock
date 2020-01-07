@@ -1,7 +1,7 @@
 {% set name = "spyder-unittest" %}
-{% set version = "0.3.1" %}
+{% set version = "0.4.0" %}
 {% set hash_type = "sha256" %}
-{% set hash = "b10b99ef3df992ac8b9a0af6261ed3c9e16fc14e7b04b6e50f4102f1c87c1347" %}
+{% set hash = "f48894d7b31255f4f2b195236d99abc800e74fd768222862ed188653e2321273" %}
 
 package:
   name: {{ name|lower }}
@@ -14,8 +14,8 @@ source:
 
 build:
   noarch: python
-  number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
