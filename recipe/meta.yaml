@@ -26,7 +26,7 @@ requirements:
   run:
     - lxml
     - python
-    - spyder >=3
+    - spyder >=4,<5
     - pyzmq
 
 test:
