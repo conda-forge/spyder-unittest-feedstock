@@ -19,12 +19,12 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.5
     - setuptools
 
   run:
     - lxml
-    - python
+    - python >=3.5
     - spyder >=4,<5
     - pyzmq
 
