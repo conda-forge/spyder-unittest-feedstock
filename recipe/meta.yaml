@@ -1,7 +1,6 @@
 {% set name = "spyder-unittest" %}
-{% set version = "0.4.0" %}
-{% set hash_type = "sha256" %}
-{% set hash = "f48894d7b31255f4f2b195236d99abc800e74fd768222862ed188653e2321273" %}
+{% set version = "0.4.1" %}
+{% set hash = "41df85d84fb6ead35627befdc9aa57c15b96b3558aff51731c0ffb1c1fac0e9e" %}
 
 package:
   name: {{ name|lower }}
@@ -10,7 +9,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  {{ hash_type }}: {{ hash }}
+  sha256: {{ hash }}
 
 build:
   noarch: python
@@ -20,12 +19,12 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.5
     - setuptools
 
   run:
     - lxml
-    - python
+    - python >=3.5
     - spyder >=4,<5
     - pyzmq
 
