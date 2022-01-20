@@ -25,7 +25,7 @@ requirements:
   run:
     - lxml
     - python >=3.5
-    - spyder >=4,<5
+    - spyder >=5.2,<6
     - pyzmq
 
 test:
