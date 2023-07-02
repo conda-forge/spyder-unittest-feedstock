@@ -1,6 +1,6 @@
 {% set name = "spyder-unittest" %}
-{% set version = "0.5.1" %}
-{% set hash = "91822efe7b665b92ad999dd34bcb4eb4b1e4eb5785ef792a8a11076a52347e2d" %}
+{% set version = "0.6.0" %}
+{% set hash = "3c6ba7b7e5b7cb22313a5cf103098805f3b8b00c60301621f10afc98002462dd" %}
 
 package:
   name: {{ name|lower }}
@@ -13,19 +13,19 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - pip
-    - python >=3.5
+    - python >=3.7
     - setuptools
 
   run:
     - lxml
-    - python >=3.5
-    - spyder >=5.3.1,<6
+    - python >=3.7
+    - spyder >=5.4.1,<6
     - pyzmq
 
 test:

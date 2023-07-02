@@ -1,11 +1,11 @@
-About spyder-unittest
-=====================
+About spyder-unittest-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/spyder-unittest-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/spyder-ide/spyder-unittest
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/spyder-unittest-feedstock/blob/main/LICENSE.txt)
 
 Summary: Spyder plugin that integrates popular unit test frameworks.
 
