@@ -1,6 +1,6 @@
 {% set name = "spyder-unittest" %}
-{% set version = "0.6.0" %}
-{% set hash = "3c6ba7b7e5b7cb22313a5cf103098805f3b8b00c60301621f10afc98002462dd" %}
+{% set version = "0.7.0" %}
+{% set hash = "97e1e306a698f14d604a997107665adf66d72a071066f6706621580b1a2e767c" %}
 
 package:
   name: {{ name|lower }}
@@ -19,13 +19,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
     - setuptools
 
   run:
     - lxml
-    - python >=3.7
-    - spyder >=5.4.1,<6
+    - python >=3.8
+    - spyder >=6,<7
     - pyzmq
 
 test:
